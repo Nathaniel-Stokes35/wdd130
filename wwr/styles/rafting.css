@@ -92,7 +92,7 @@ main {
     top: 20%;
 }
 .hero article p{
-    color: var(--cyan);
+    color: var(--white);
     font-size: 30px;
     font-weight: bold;
     margin-top: 10px;
