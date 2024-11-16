@@ -14,9 +14,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    background-color: var(--gray);
+}
 
 h1, h2, h3, h4, h5, h6 {font-family: 'Monteserrat', sans-serif; color: var(--white); text-align: center;}
-body, p, span, li, div {font-family: 'Dosis', serif; color: var(--gray)}
+body, p, span, li, div {font-family: 'Dosis', serif; color: var(--jade); font-size: 0.8vw;}
 
 body{
     max-width: 1200px;
@@ -29,9 +32,11 @@ header{
     align-items: center;
     padding: 10px 20px;
     background-color: var(--cyan);
+    width: 100%;
 }
 .logo-box{
     height: 50px;
+    padding-right: 10px;
 }
 .logo-box img{
     height: 50px;
@@ -64,11 +69,16 @@ main {
 }
 .hero {
     position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .hero img{
     display: block;
     width: 100%;
     height: auto;
+    opacity: 0.85;
+    padding-right: 20px;
 }
 .hero h1,
 .hero article{
@@ -82,14 +92,23 @@ main {
     top: 20%;
 }
 .hero article p{
-    color: var(--white);
+    color: var(--cyan);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    top: 120px;
 }
 .hero article{
     top: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    width: 100%;
 }
 .hero article img{
     float: right;
-    margin-left: 20px;
+    margin-left: 120px;
 }
 .hero article::after {
     content: "";
@@ -98,6 +117,12 @@ main {
 }
 .history p{
     color: var(--white);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.adventure {
+    background-color: var(--jade);
 }
 .image-gallary{
     display: flex;
@@ -115,6 +140,7 @@ footer{
     background-color: var(--cyan);
     text-align: center;
     padding: 10px 20px;
+    width: 100%;
 }
 #social{
     text-decoration: none;
