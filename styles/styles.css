@@ -50,7 +50,6 @@ p {
 }
 aside {
     width: 20rem;
-    height: 1fr;
     position: relative;
     border: 1px solid var(--black);
     background-color: var(--white);
