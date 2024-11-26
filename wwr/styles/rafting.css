@@ -1,12 +1,13 @@
 :root{
-    --cyan: #00FFFF;
-    --blue: #1EA5FF;
+    --darkblue: rgba(39, 86, 109, 0.9);
+    --lightblue: rgb(84, 156, 188);
     --white: #F5F5F5;
-    --jade: #57A773;
-    --gray: #909090;
-    --primary-color: var(--blue);
-    --secondary-color: var(--cyan);
-    --accent1-color: var(--white);
+    --gold: rgba(220, 172, 68, 0.8);
+    --gray: rgb(102, 102, 102);
+    --lightgray: rgba(150, 150, 150, 0.9);
+    --primary-color: var(--darkblue);
+    --secondary-color: var(--lightblue);
+    --accent1-color: var(--gold);
     --accent2-color: var(--gray);
 }
 * {
