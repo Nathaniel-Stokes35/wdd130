@@ -140,7 +140,7 @@ main {
 }
 .hero article img{
     width: 120%;
-    float: center;
+    float:right;
 }
 .hero article::after {
     content: "";
