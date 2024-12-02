@@ -1,10 +1,11 @@
 :root{
-    --darkblue: rgba(39, 86, 109, 0.9);
+    --darkblue: rgba(19, 46, 59, 0.9);
     --lightblue: rgb(84, 156, 188);
-    --white: #F5F5F5;
+    --white: #FFFFFF;
     --gold: rgba(220, 172, 68, 0.8);
-    --gray: rgb(102, 102, 102);
+    --darkgray: rgb(82, 82, 82);
     --lightgray: rgba(150, 150, 150, 0.9);
+    --boxshadow: rgba(0, 0, 0, 0.9);
     --primary-color: var(--darkblue);
     --secondary-color: var(--lightblue);
     --accent1-color: var(--gold);
@@ -33,7 +34,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 20px 30px;
-    background-color: rgba(84, 156, 188, 0.5);
+    background-color: var(--darkblue);
     width: 100%;
 }
 .logo-box{
@@ -76,17 +77,17 @@ nav a {
     font-size: 16px;
 }
 nav a:hover {
-    color: rgb(102, 102, 102);
+    color: var(--darkgray);
 }
 main {
-    background-color: rgba(150, 150, 150, 0.9);
+    background-color: var(--lightgray);
 }
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.9);
+    box-shadow: inset 4px 4px 10px var(--boxshadow);
 }
 .hero {
     position: relative;
@@ -94,7 +95,7 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(220, 172, 68, 0.8);
+    background-color: var(--gold);
     width: 100%;
     grid-column: 2 / 3;
 }
@@ -124,7 +125,7 @@ main {
 }
 .hero article p{
     color: whitesmoke;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    text-shadow: 2px 2px 8px var(--boxshadow);
     font-size: 140%;
     font-weight: bold;
     margin-top: 10px;
@@ -149,10 +150,10 @@ main {
     clear: both;
 }
 .history {
-    background-color: rgba(39, 86, 109, 0.9);
+    background-color: var(--darkblue);
     padding-top: 1%;
     padding-bottom: 1%;
-    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.9)
+    box-shadow: inset 4px 4px 10px var(--boxshadow)
 }
 .history .p-holder{
     display: flex;
@@ -171,9 +172,12 @@ main {
     height: auto;
 }
 .adventure {
-    background-color: rgb(84, 156, 188);
-    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.9);
+    background-color: var(--lightblue);
+    box-shadow: inset 4px 4px 10px var(--boxshadow);
     justify-content: space-between
+}
+.adventure h2{
+    padding-top: 1%;
 }
 .adventure figcaption{
     color: var(--white);
@@ -191,12 +195,12 @@ main {
 .display img{
     width: 100%;
     height: auto;
-    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.9)
+    box-shadow: inset 4px 4px 10px var(--boxshadow)
 }
 .display-crew img{
     height: auto;
     width: 100%;
-    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.9)
+    box-shadow: inset 4px 4px 10px var(--boxshadow)
 }
 .display-santa{
     height: auto;
