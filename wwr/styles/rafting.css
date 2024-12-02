@@ -71,7 +71,7 @@ nav ul li:first-child{
     margin-left: 0;
 }
 nav a {
-    color: rgb(39, 86, 109);
+    color: var(--white);
     font-weight: bold;
     font-size: 16px;
 }
@@ -176,7 +176,7 @@ main {
     justify-content: space-between
 }
 .adventure figcaption{
-    color: rgb(220, 172, 68);
+    color: var(--white);
     font-weight: bold;
     text-align: center;
 }
@@ -222,7 +222,7 @@ main {
 footer{
     display: grid;
     grid-template-columns: 90% 10%;
-    background-color: rgba(84, 156, 188, 0.5);
+    background-color: var(--white);
     text-align: center;
     padding: 10px 20px;
     width: 100%;
