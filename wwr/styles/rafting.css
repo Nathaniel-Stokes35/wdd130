@@ -1,6 +1,6 @@
 :root{
     --darkblue: rgba(19, 46, 59, 0.9);
-    --lightblue: rgb(84, 156, 188);
+    --lightblue: rgb(24, 74, 94);
     --white: #FFFFFF;
     --gold: rgba(220, 172, 68, 0.8);
     --darkgray: rgb(82, 82, 82);
@@ -181,6 +181,7 @@ main {
 }
 .adventure figcaption{
     color: var(--white);
+    text-shadow: 4px 4px 10px var(--boxshadow);
     font-weight: bold;
     text-align: center;
 }
