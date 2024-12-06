@@ -96,6 +96,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--lightgray);
+    overflow: hidden;
 }
 .left-items{
     width: 75%;
@@ -106,6 +107,9 @@ main {
     background-color: var(--darkblue);
     box-shadow: inset 4px 4px 10px var(--boxshadow);
     border: 2px solid var(--gold);
+}
+.left-items h2{
+    margin-bottom: 2%;
 }
 
 .right-items{
@@ -121,6 +125,10 @@ main {
     background-color: var(--lightblue);
     box-shadow: inset 4px 4px 10px var(--boxshadow);
     border: 2px solid var(--lightgray);
+    margin-bottom: 2%;
+}
+.contact-table tr{
+    font-size: 24px;
 }
 .hero-container {
     display: grid;
@@ -211,8 +219,8 @@ main {
     width: 20%;
     height: auto;
 }
-.form-section {
-    margin-bottom: 20px;
+.form-section label{
+    font-size: 32px;
 }
 .form-section input, .form-section textarea {
     width: 100%;
@@ -220,7 +228,7 @@ main {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    color: var(--white);
+    font-size: 16px;
 }
 #section-1{
     color: var(--white);
@@ -245,7 +253,20 @@ main {
     border-radius: 4px;
     background-color: var(--lightblue);
     color:var(--white);
-    
+    margin-bottom: 1%;
+}
+.radio-buttons h2 {
+    grid-column: span 3;
+    text-align: center;
+    margin-bottom: 2%;
+}
+input[type="radio"]{
+    transform: scale(2);
+    width: 200px;
+}
+input[type="checkbox"]{
+    transform: scale(2);
+    width: 30%;
 }
 .text-box{
     color: var(--white);
@@ -258,6 +279,10 @@ main {
     border-radius: 4px;
     background-color: var(--lightblue);
     padding-bottom: 2%;
+}
+.text-box h2{
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .text-box textarea{
     height: 150%;
@@ -404,8 +429,17 @@ footer a{
 /* Media Query for smaller devices */
 @media (max-width: 768px) {
     /* Adjust grid for contact-info */
+    h1, h2, h3, h4, h5, h6 {font-size: 32px;}
+    body, p, span, li, div, th, td, figcaption{font-size: 20px;}
+
     .contact-info {
         grid-template-columns: 1fr;
+    }
+    .radio-buttons{
+        grid-template-columns: 1fr;
+    }
+    .radio-buttons h2{
+        grid-column: 1;
     }
 
     .left-items, .right-items {
@@ -420,10 +454,12 @@ footer a{
     }
 
     .image-gallary {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        overflow: hidden;
     }
     #employee-gal {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
     .submit {
