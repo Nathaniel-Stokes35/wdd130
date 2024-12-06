@@ -223,7 +223,8 @@ form{
     padding-bottom: 2%;
     width: 80%;
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+    justify-items: center;
     border: 2px solid var(--gold);
     border-radius: 4px;
     background-color: var(--lightblue);
@@ -249,13 +250,13 @@ form{
     width: 80%;
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;  /* Centers the checkbox horizontally */
-    align-items: center;    /* Centers the checkbox vertically */
+    justify-items: center;
+    align-items: center;
     color: var(--white);
     border: 2px solid var(--gold);
     border-radius: 4px;
     background-color: var(--lightblue);
-    padding: 20px; /* Optional, to add some space inside the container */
+    padding: 1%;
 }
 
 .submit label {
@@ -292,6 +293,12 @@ figcaption{
     flex-wrap: wrap;
     padding: 20px;
     gap:20px;
+}
+#employee-gal{
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 5%;
 }
 .employee{
     padding-top: 2%;
@@ -365,20 +372,40 @@ footer a{
     color: var(--darkblue)
 }
 
-/* Media Query for small screens (e.g., phones) */
-@media screen and (max-width: 768px) {
-    header, .contact-info, .image-gallary, .full-form, .employee, footer{
-        flex-direction: column; /* Stack items vertically */
-        align-items: center;
+/* Media Query for smaller devices */
+@media (max-width: 768px) {
+    /* Adjust grid for contact-info */
+    .contact-info {
+        grid-template-columns: 1fr;
     }
 
-    .contact-table {
-        width: 100%; /* Make table full width on smaller screens */
+    .left-items, .right-items {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
     }
 
-    .google-map {
-        width: 100%; /* Make map full width on smaller screens */
-        order: -1; 
-        margin-bottom: 20px;
+    /* Make form inputs and text areas wider on mobile */
+    form input, form textarea {
+        width: 100%;
+    }
+
+    .image-gallary {
+        grid-template-columns: 1fr 1fr;
+    }
+    #employee-gal {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .submit {
+        width: 100%;
+    }
+
+    .submit button {
+        width: 80%;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
     }
 }
