@@ -20,7 +20,7 @@ html {
     background-color: var(--gray);
 }
 
-h1, h2, h3, h4, h5, h6 {font-family: 'Monteserrat', sans-serif; color: var(--white); text-align: center;text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);}
+h1, h2, h3, h4, h5, h6 {font-family: 'Monteserrat', sans-serif; color: var(--white); text-align: center; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);}
 body, p, span, li, div {font-family: 'Dosis', serif; color: rgb(39, 86, 109); font-size: 0.8vw;}
 
 body{
@@ -33,7 +33,7 @@ form {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--lightgray);
+    background-color: var(--darkblue);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
