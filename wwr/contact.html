@@ -28,74 +28,73 @@
                 </nav>
             </header>
             <main>
-                <div class="contact-info">
-                    <div class="left-items">
-                        <table class="contact-table">
-                            <tr>
-                                <th>Address</th>
-                                <td>1041 Rte 148, Bryson, Quebec J0X 1H0, Canada</td>
-                            </tr>
-                            <tr>
-                                <th>Contact Number</th>
-                                <td>1(555)234-5678</td>
-                            </tr>
-                            <tr>
-                                <th>Email</th>
-                                <td><a href="mailto:contact_resource@rafting-momentum.com" target="_blank">contact_resource@rafting-momentum.com</a></td>
-                            </tr>
-                        </table>
-                        <form action="/submit" method="POST">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required><br><br>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required><br><br>
-                    </div> <!-- Close left-items div -->
-                    
-                    <div class="right-items">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11151.769726839248!2d-76.61341422275392!3d45.672055993156334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd174448ba96f95%3A0xa2aed57557881424!2sRafting%20Momentum%20I%20Rafting%20Ottawa%20I%20White%20water%20rafting!5e0!3m2!1sen!2sus!4v1733462831887!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <form action="/submit" method="POST">
+                    <div class="contact-info">
+                        <div class="left-items">
+                            <table class="contact-table">
+                                <tr>
+                                    <th>Address</th>
+                                    <td>1041 Rte 148, Bryson, Quebec J0X 1H0, Canada</td>
+                                </tr>
+                                <tr>
+                                    <th>Contact Number</th>
+                                    <td>1(555)234-5678</td>
+                                </tr>
+                                <tr>
+                                    <th>Email</th>
+                                    <td><a href="mailto:contact_resource@rafting-momentum.com" target="_blank">contact_resource@rafting-momentum.com</a></td>
+                                </tr>
+                            </table>
+                            <div class="form-section" id="section-1">                            
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required><br><br>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required><br><br>
+                            </div>
+                        </div>
+                        
+                        <div class="right-items">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11151.769726839248!2d-76.61341422275392!3d45.672055993156334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd174448ba96f95%3A0xa2aed57557881424!2sRafting%20Momentum%20I%20Rafting%20Ottawa%20I%20White%20water%20rafting!5e0!3m2!1sen!2sus!4v1733462831887!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-                </div>
 
-                <section class="employee">
-                    <h2>Meet our Team!</h2>
-                    <section class="image-gallary" id="employee-gal">
-                        <figure class="display">
-                            <img src="./images/dingbats.jpg" alt="Wacky Counslers">
-                            <figcaption>James and Frank</figcaption>
-                        </figure>
-                        <figure class="display">
-                            <img src="./images/infectious_smile.jpg" alt="infectious_smile">
-                            <figcaption>Courtney</figcaption>
-                        </figure>
-                        <figure class="display">
-                            <img src="./images/solving_problems.png" alt="solving problems">
-                            <figcaption>John and Janet "figuring it out"</figcaption>
-                        </figure>
+                    <section class="employee">
+                        <h2>Meet our Team!</h2>
+                        <section class="image-gallary" id="employee-gal">
+                            <figure class="display">
+                                <img src="./images/dingbats.jpg" alt="Wacky Counslers">
+                                <figcaption>James and Frank</figcaption>
+                            </figure>
+                            <figure class="display">
+                                <img src="./images/infectious_smile.jpg" alt="infectious_smile">
+                                <figcaption>Courtney</figcaption>
+                            </figure>
+                            <figure class="display">
+                                <img src="./images/solving_problems.png" alt="solving problems">
+                                <figcaption>John and Janet "figuring it out"</figcaption>
+                            </figure>
+                        </section>
                     </section>
-                </section>
+                    <div class="form-section" id="section-2">
+                        <div class="radio-buttons">
+                            <label><input type="radio" name="feedback" value="General Inquiry">General Inquiry</label>
+                            <label><input type="radio" name="feedback" value="Reservation Question">Reservation Question</label>
+                            <label><input type="radio" name="feedback" value="Website Suggestion">Website Suggestion</label>
+                        </div>
 
-                <section class="full-form">
-                    <div class="radio-buttons">
-                        <label><input type="radio" name="feedback" value="General Inquiry">General Inquiry</label>
-                        <label><input type="radio" name="feedback" value="Reservation Question">Reservation Question</label>
-                        <label><input type="radio" name="feedback" value="Website Suggestion">Website Suggestion</label>
+                        <div class="text-box">
+                            <h2>User Comment:</h2>
+                            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                        </div>
+
+                        <div class="submit">
+                            <label><input type="checkbox" name="subscribe" value="yes">Please Subscribe me to the Monthly Newsletter</label><br>
+                            <button type="submit">Submit</button>
+                        </div>
                     </div>
-
-                    <div class="text-box">
-                        <h2>User Comment:</h2>
-                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                    </div>
-
-                    <div class="submit">
-                        <label><input type="checkbox" name="subscribe" value="yes">Please Subscribe me to the Monthly Newsletter</label><br>
-                        <button type="submit">Submit</button>
-                    </div>
-                </section> <!-- Close full-form section -->
-
-            </form> <!-- Close the form here -->
-        </main>
+                </form>
+            </main>
         </div>
-
         <footer>
             <p>&copy;2024 | Rafting Momentum, Nathaniel Stokes | Missouri, USA | 
                 <a href="https://app.moqups.com/Jky2HKR3eVdDi3CqJFP7Mv9iTgaljRae/view/page/ad64222d5" target="_blank">Contact Us Wireframe</a>

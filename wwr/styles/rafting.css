@@ -28,6 +28,15 @@ body{
     display: grid;
     place-items: center;
 }
+form {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--lightgray);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 header{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
@@ -109,13 +118,6 @@ main {
 .contact-table{
     width:80%;
     border-collapse: collapse;
-    background-color: var(--lightblue);
-    box-shadow: inset 4px 4px 10px var(--boxshadow);
-    border: 2px solid var(--lightgray);
-}
-form{
-    width: 80%;
-    padding-left: 10px;
     background-color: var(--lightblue);
     box-shadow: inset 4px 4px 10px var(--boxshadow);
     border: 2px solid var(--lightgray);
@@ -209,7 +211,21 @@ form{
     width: 20%;
     height: auto;
 }
-.full-form{
+.form-section {
+    margin-bottom: 20px;
+}
+.form-section input, .form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: var(--white);
+}
+#section-1{
+    color: var(--white);
+}
+#section-2{
     padding-left: 10%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -268,7 +284,20 @@ form{
 .submit button {
     width:80%;
     height: 100%;
-    margin-top: 10px; /* Adds space between the checkbox and the submit button */
+    margin-top: 10px;
+    background-color: var(--gold);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto 0;
+    box-shadow: inset 4px 4px 10px var(--boxshadow)
+}
+.submit button:hover{
+    background-color: var(--lightgray);
+    color: var(--white);
 }
 .adventure {
     background-color: var(--lightblue);
