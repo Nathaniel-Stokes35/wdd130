@@ -2,7 +2,7 @@
     --darkblue: rgba(19, 46, 59, 0.9);
     --lightblue: rgb(24, 74, 94);
     --white: #FFFFFF;
-    --gold: rgba(220, 172, 68, 0.8);
+    --gold: rgba(152, 106, 0, 0.8);
     --darkgray: rgb(82, 82, 82);
     --lightgray: rgba(150, 150, 150, 0.9);
     --boxshadow: rgba(0, 0, 0, 0.9);
@@ -130,6 +130,27 @@ main {
 .contact-table tr{
     font-size: 24px;
 }
+#trips_container{
+    width: 100%;
+    background-color: var(--darkblue);
+}
+.grid-item {
+    position: relative;
+    text-align: center;
+}
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -154,9 +175,29 @@ main {
     padding-left: 20px;
     order: 1;
 }
+.hero-text{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    color: white;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
 .background{
     max-height: 1200px;
     max-width: 1200px;
+}
+.title-box{
+    align-items: center;
+    background-color: var(--darkblue);
+    text-shadow: 2px 2px 8px var(--boxshadow);
+    box-shadow: inset 4px 4px 10px var(--boxshadow);
+    border: 2px solid var(--gold);
+    border-radius: 4px;
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
 .hero h1,
 .hero article{
@@ -196,6 +237,9 @@ main {
     content: "";
     display: block;
     clear: both;
+}
+.highlight {
+    background-color: var(--accent1-color);
 }
 .history {
     background-color: var(--darkblue);
@@ -299,7 +343,6 @@ input[type="checkbox"]{
     background-color: var(--lightblue);
     padding: 1%;
 }
-
 .submit label {
     display: flex;
     justify-content: center;  /* Centers the label text */
@@ -311,6 +354,7 @@ input[type="checkbox"]{
     height: 100%;
     margin-top: 10px;
     background-color: var(--gold);
+    color: var(--white);
     padding: 12px 24px;
     border: none;
     border-radius: 5px;
@@ -341,18 +385,25 @@ figcaption{
 .image-gallary{
     width:100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
     gap:20px;
 }
-#employee-gal{
-    grid-template-columns: 1fr 1fr 1fr;
+#trip-gallary{
+    background-color: var(--lightblue);
+    box-shadow: inset 2px 2px 3px var(--boxshadow);
+    border: 2px solid var(--gold);
+}
+.image-gallary.three-columns{
+    grid-template-columns: repeat(3, 1fr);
     padding-left: 2%;
     padding-right: 2%;
     gap: 5%;
+}
+.image-gallary.five-columns{
+    grid-template-columns: repeat(5, 1fr);
 }
 .employee{
     padding-top: 2%;
@@ -362,6 +413,31 @@ figcaption{
     border: 2px solid var(--gold);
     margin-top: 1%;
     margin-bottom: 1%;
+}
+#trips-table {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: var(--lightgray);
+    box-shadow:inset 4px 4px 7px var(--boxshadow);
+}
+#trips{
+    border-spacing: 20px;
+    background-color: var(--lightblue);
+    color:var(--white);
+    box-shadow: inset 2px 2px 3px var(--boxshadow);
+    border: 2px solid var(--gold);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow:inset 7px 7px 6px var(--boxshadow);
+}
+td{
+    border-bottom: 3px solid var(--gold);
+    padding: 10px
 }
 .display img{
     width: 100%;
@@ -393,6 +469,42 @@ figcaption{
 .display img:hover {
     height: auto;
     width: 120%;
+}
+.trip-table{
+    width: 100%;
+    justify-content: center;
+}
+#contact-plug{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    background-color: var(--accent1-color);
+    padding-bottom: 1%;
+}
+#contact-plug p{
+    color: var(--white);
+    font-weight: 400;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 30px
+}
+#contact-plug a{
+
+    font-style: italic;
+    font-size: 36px;
+}
+#close{
+    padding-left: 10%;
+    display: grid;
+    width: 100%;
+    background-color: var(--darkblue);
+    box-shadow: 4px 4px 10px var(--boxshadow);
+    align-items: center;
+    padding-bottom: 1%;
+}
+#close h1, a{
+    font-size: 26px;
 }
 footer{
     display: grid;
