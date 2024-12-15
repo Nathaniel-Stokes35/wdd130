@@ -84,37 +84,37 @@
                 </a>
             </div>
         </footer>
+        <script>
+            function selectTrip(tripNumber) {
+                // Define image sources and captions for each trip
+                const tripData = {
+                    1: { images: ['./images/beginner-rapids.jpg', './images/beginner-viewing.jpg', './images/community-training.jpg'],
+                        captions: ['Training Rapids', 'Beautiful Scenes', 'Community Friendly']
+                    },
+                    2: {images: ['./images/dangerous-pitfalls.jpg', './images/tight-corners.jpg', './images/intermediate-big-wins.jpg'],
+                        captions: ['Faster Pace', 'Tight Spaces', 'Bigger Views']
+                    },
+                    3: {images: ['./images/breathtaking-views.jpg', './images/stay-in-the-boat.jpg', './images/not-for-faint-of-heart.jpeg'],
+                    captions: ['Well-Worth the Effort', 'Keep your Head above the Water', 'Not as Easy as it Looks']
+                    },
+                };
+            
+                // Clear previous highlights
+                document.querySelectorAll('#trips tr').forEach(row => row.classList.remove('highlight'));
+            
+                // Update images based on selection
+                const selectedData = tripData[tripNumber];
+                document.getElementById('image1').src = selectedData.images[0];
+                document.getElementById('image2').src = selectedData.images[1];
+                document.getElementById('image3').src = selectedData.images[2];
+            
+                document.getElementById('caption1').textContent = selectedData.captions[0];
+                document.getElementById('caption2').textContent = selectedData.captions[1];
+                document.getElementById('caption3').textContent = selectedData.captions[2];
+            
+                // Highlight the corresponding row in the table
+                document.getElementById(`tripRow${tripNumber}`).classList.add('highlight');
+            }
+        </script>
     </body>
-    <script>
-function selectTrip(tripNumber) {
-    // Define image sources and captions for each trip
-    const tripData = {
-        1: { images: ['./images/beginner-rapids.jpg', './images/beginner-viewing.jpg', './images/community-training.jpg'],
-            captions: ['Training Rapids', 'Beautiful Scenes', 'Community Friendly']
-        },
-        2: {images: ['./images/dangerous-pitfalls.jpg', './images/tight-corners.jpg', './images/intermediate-big-wins.jpg'],
-            captions: ['Faster Pace', 'Tight Spaces', 'Bigger Views']
-        },
-        3: {images: ['./images/breathtaking-views.jpg', './images/stay-in-the-boat.jpg', './images/not-for-faint-of-heart.jpeg'],
-        captions: ['Well-Worth the Effort', 'Keep your Head above the Water', 'Not as Easy as it Looks']
-        },
-    };
-
-    // Clear previous highlights
-    document.querySelectorAll('#trips tr').forEach(row => row.classList.remove('highlight'));
-
-    // Update images based on selection
-    const selectedData = tripData[tripNumber];
-    document.getElementById('image1').src = selectedData.images[0];
-    document.getElementById('image2').src = selectedData.images[1];
-    document.getElementById('image3').src = selectedData.images[2];
-
-    document.getElementById('caption1').textContent = selectedData.captions[0];
-    document.getElementById('caption2').textContent = selectedData.captions[1];
-    document.getElementById('caption3').textContent = selectedData.captions[2];
-
-    // Highlight the corresponding row in the table
-    document.getElementById(`tripRow${tripNumber}`).classList.add('highlight');
-}
-    </script>
 </html>
