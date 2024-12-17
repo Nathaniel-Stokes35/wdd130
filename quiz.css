@@ -1,0 +1,38 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 105%;
+}
+h1 {
+    color: #C33;
+}
+fieldset {
+    border: 3px solid rgb(9 9 9 / 0.5);
+    padding-right: 2%;
+}
+legend {
+    color: #C33;
+}
+form {
+    width:800px;
+    display: grid;
+    padding: 1rem;
+    border: 3px solid #000;
+    background-color: rgb(9 9 9 / 0.1);
+}
+.form-item{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0 0 2rem;
+}
+.q2{
+    grid-template-columns: 1fr;
+}
+button {
+    font-size: 150%;
+}
+#button-box {
+    margin-bottom: 1rem;
+}

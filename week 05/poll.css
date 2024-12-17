@@ -1,0 +1,103 @@
+:root{
+    --primary-font:'Monteserrat', sans-serif;
+    --secondary-font:'Dosis', serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+label
+button,
+input,
+select,
+textarea {
+  font-family: var(--secondary-font);
+  font-size: 150%;
+  padding: 0.5rem;
+}
+.gird-box{
+    display: grid;
+    align-items: center;
+}
+header{
+    margin: 0 auto;
+    width: 650px;
+}
+h1{
+    margin: 1rem;
+    font-size:1.5em;
+    color: navy;
+    text-align: center;
+}
+body{
+    display: flex;
+    font-family: var(--primary-font);
+    font-size: 100%;
+    justify-content: center;
+}
+form{
+    width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+    justify-content: center;
+
+}
+.form-item{
+    display: grid;
+    align-items: center;
+}
+.column1{
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+    padding-right: 5%;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
+fieldset{
+    border: 5px solid rgb(0 0 0 / 0.5);
+    border-radius: 0.5rem;
+    display: grid;
+    gap: 20px;
+    width:800px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3%;
+    margin-bottom: 1%;
+}
+legend{
+    padding:0.5rem;
+    color:navy;
+    font-size:1.3em;
+}
+label{
+    text-align: right;
+    padding-right: 1rem;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+@media screen and (max-width:800px) {
+    form{
+        width:100%;
+        display:block;
+    }
+}

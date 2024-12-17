@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="quiz.css">
+	    <title>WDD 130 HTML Student Quiz</title>
+		<meta name="description" content="WDD 130 HTML Student Quiz">
+		<meta name="author" content="Nathaniel Stokes">
+    </head>
+    <body>
+        <header>
+            <h1>Web Development Student Quiz</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Questions</legend>
+                    <div class="form-item q1">
+                        <label for="q1">What is the acronym HTML short for?</label>
+                        <input type="text" id="q1" name="q1" value="">
+                    </div>
+                    <div class="form-item q2">
+                        <label for="q2">Write the rule to align a div element (id="example") horizontally in CSS:</label>
+                        <textarea id="q2" name="q2" rows="4" value="Print exactly how it would be written in CSS"></textarea>
+                    </div>
+                    <div class="form-item q3">
+                        <label for="q3">How could I produce space between my p elements and the left edge of their container?</label>
+                        <select id="q3" name="q3">
+                            <option value="" selected disabled>Select One Option</option>
+                            <option value="margin">margin-right: 0.5rem</option>
+                            <option value="padding">padding-left: 0.5rem</option>
+                            <option value="move">move-right: 0.5rem</option>
+                            <option value="color">color: #FFF</option>
+                        </select>
+                    </div>
+                    <div class="form-item q4">
+                        <label for="q4">What is the Green hexidecimal value in this shorthand? "#03F"</label>
+                        <input type="integer" id="q4" name="q4" value="">
+                    </div>
+                    <div id="button-box">
+                        <button type="submit">Send Answers</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

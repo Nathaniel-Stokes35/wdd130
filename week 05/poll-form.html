@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="poll.css">
+	    <title>Poll Form: Information</title>
+		<meta name="description" content="Poll-Form: Information">
+		<meta name="author" content="Nathaniel Stokes">
+        
+    </head>
+    <body>
+        <div class="grid-box">
+            <header>
+                <h1>WDD 130 | HTML Form - User Poll</h1>
+            </header>
+            <main>
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="form-item column2">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname" value="John Jacob Jingle-Heimer-Schmidt" >
+                        </div>
+                        <div class="form-item column2">
+                            <label for="useremail">Email:</label>
+                            <input type="email" id="useremail" name="useremail" value="John123@hotmail.com">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Questions</legend>
+                        <div class="form-item column1"><label>What is your favorite browser?</label>
+                            <select id="browser" name="browser">
+                                <option selected value="opera">Opera</option>
+                                <option value="chrome">Google Chrome</option>
+                                <option value="firefox">Mozilla Firefox</option>
+                                <option value="ms_edge">Microsoft: Edge</option>
+                            </select>
+                        </div>
+                        <div class="form-item column1">
+                            <label for="pet">Do you have a household pet?</label>
+                            <input type="checkbox" id="pet" name="pet">
+                        </div>
+                        <div class="form-item">
+                            <label for="feedback">List the places you have lived:</label>
+                            <textarea id="feedback" name="feedback" rows="4" value="Marionville MO, Anderson MO, Springfield MO, Camdenton MO"></textarea>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit Poll</button>
+                </form>
+            </main>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+</html>
